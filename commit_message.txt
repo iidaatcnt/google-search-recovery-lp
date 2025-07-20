@@ -1,1 +1,1 @@
-Fix: Adjust Vercel deployment configuration and CSS path
+Fix: Move index.html to public directory and remove vercel.json
