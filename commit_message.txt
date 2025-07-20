@@ -1,1 +1,1 @@
-Add privacy-policy.html and update footer link
+Add project leader photo section and styling
