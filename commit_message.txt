@@ -1,1 +1,1 @@
-Add abstract technology background image to hero section
+Refactor: Separate CSS into public/styles.css and create public/images directory
