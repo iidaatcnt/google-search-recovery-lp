@@ -56,3 +56,34 @@ section h3::after { content: ''; display: block; width: 60px; height: 4px; backg
 
 /* Footer */
 footer { background: #4285F4; color: #e8f0fe; text-align: center; padding: 2.5rem 0; }
+
+/* Leader Message Section */
+.leader-profile {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+.leader-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Make it circular */
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: 5px solid #FBBC05; /* Google yellow border */
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+.leader-name {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #4285F4; /* Google blue */
+    margin-bottom: 0.5rem;
+}
+.leader-intro {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #555;
+}

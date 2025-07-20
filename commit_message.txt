@@ -1,1 +1,1 @@
-Add privacy policy and company links to footer
+Add privacy-policy.html and update footer link
