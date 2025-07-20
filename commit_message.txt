@@ -1,1 +1,1 @@
-Refactor: Update color scheme to be more professional and IT-focused
+Refactor: Update color scheme to Google-inspired design
