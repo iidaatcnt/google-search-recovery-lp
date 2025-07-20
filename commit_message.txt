@@ -1,1 +1,1 @@
-Update form action to Formspree endpoint
+Refactor: Update color scheme to be more professional and IT-focused
