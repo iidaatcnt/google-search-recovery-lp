@@ -1,1 +1,1 @@
-Refactor: Separate CSS into public/styles.css and create public/images directory
+Fix: Adjust Vercel deployment configuration and CSS path
