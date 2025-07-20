@@ -1,1 +1,1 @@
-Fix: Move index.html to public directory and remove vercel.json
+Refactor: Reorganize file structure to traditional layout
