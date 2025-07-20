@@ -3,112 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Google検索ペナルティ復旧サービス - あなたのビジネスをオンラインに呼び戻す</title>
+    <title>【最後の砦】Google検索ペナルティ復旧の専門家集団</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 0; background-color: #f9f9f9; }
-        header { background-color: #fff; color: #fff; padding: 1rem 0; text-align: center; border-bottom: 1px solid #ddd; }
-        header h1 { color: #1a73e8; margin: 0; font-size: 2.5rem; }
-        header p { color: #555; font-size: 1.1rem; }
-        .container { max-width: 960px; margin: auto; overflow: hidden; padding: 0 2rem; }
-        .hero { background: #1a73e8; color: #fff; padding: 4rem 2rem; text-align: center; }
-        .hero h2 { font-size: 2.8rem; margin-bottom: 1rem; }
-        .hero p { font-size: 1.2rem; margin-bottom: 2rem; }
-        .cta-button { background: #ffc107; color: #333; padding: 1rem 2rem; text-decoration: none; border-radius: 5px; font-weight: bold; font-size: 1.1rem; transition: background-color 0.3s; }
-        .cta-button:hover { background-color: #ffca2c; }
-        section { padding: 4rem 0; }
-        section h3 { text-align: center; font-size: 2.2rem; margin-bottom: 3rem; color: #333; }
-        .service-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; }
-        .service-item { background: #fff; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); text-align: center; }
-        .service-item h4 { font-size: 1.5rem; color: #1a73e8; margin-bottom: 1rem; }
-        .target-section { background-color: #e8f0fe; }
-        .contact-form { background: #fff; padding: 3rem; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); max-width: 700px; margin: auto; }
+        body { font-family: 'Hiragino Kaku Gothic ProN', 'Meiryo', sans-serif; line-height: 1.8; color: #2c3e50; margin: 0; padding: 0; background-color: #fdfdfd; }
+        .container { max-width: 900px; margin: auto; overflow: hidden; padding: 0 2rem; }
+        
+        /* Header */
+        header { background-color: #2c3e50; color: #fff; padding: 1.5rem 0; text-align: center; border-bottom: 5px solid #e74c3c; }
+        header h1 { margin: 0; font-size: 2.2rem; font-weight: 900; }
+        header p { margin: 0.5rem 0 0; font-size: 1.1rem; color: #ecf0f1; }
+
+        /* Hero Section */
+        .hero { background: #34495e; color: #fff; padding: 5rem 2rem; text-align: center; }
+        .hero h2 { font-size: 3rem; margin-bottom: 1rem; line-height: 1.4; font-weight: 900; }
+        .hero .subtitle { font-size: 1.5rem; margin-bottom: 2rem; color: #e74c3c; font-weight: bold; }
+        .hero p { font-size: 1.1rem; max-width: 700px; margin: 0 auto 2.5rem auto; }
+        .cta-button { background: #e74c3c; color: #fff; padding: 1.2rem 2.5rem; text-decoration: none; border-radius: 5px; font-weight: bold; font-size: 1.2rem; transition: background-color 0.3s, transform 0.3s; display: inline-block; }
+        .cta-button:hover { background-color: #c0392b; transform: translateY(-3px); }
+
+        /* Content Sections */
+        section { padding: 5rem 0; }
+        section h3 { text-align: center; font-size: 2.5rem; margin-bottom: 4rem; color: #2c3e50; font-weight: 800; position: relative; }
+        section h3::after { content: ''; display: block; width: 60px; height: 4px; background: #e74c3c; margin: 1rem auto 0; }
+        
+        /* For Whom Section */
+        .for-whom { background-color: #ecf0f1; }
+        .for-whom-box { background: #fff; border: 2px solid #e74c3c; padding: 2rem; text-align: center; max-width: 750px; margin: 0 auto; }
+        .for-whom-box h4 { font-size: 1.8rem; color: #e74c3c; margin-top: 0; }
+        .for-whom-box ul { list-style: none; padding: 0; text-align: left; max-width: 500px; margin: 1.5rem auto; }
+        .for-whom-box li { margin-bottom: 1rem; font-size: 1.1rem; padding-left: 1.5em; position: relative; }
+        .for-whom-box li::before { content: '✔'; color: #e74c3c; position: absolute; left: 0; font-weight: bold; }
+
+        /* Philosophy Section */
+        .philosophy-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2.5rem; }
+        .philosophy-item { background: #fff; padding: 2.5rem; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.07); text-align: center; border-top: 5px solid #3498db; }
+        .philosophy-item h4 { font-size: 1.6rem; color: #3498db; margin-bottom: 1rem; }
+        .philosophy-item p { font-size: 1.05rem; }
+
+        /* Contact Section */
+        .contact-section { background-color: #34495e; color: #fff; }
+        .contact-section h3 { color: #fff; }
+        .contact-section h3::after { background: #fff; }
+        .contact-form { background: #fff; color: #333; padding: 3rem; border-radius: 8px; max-width: 700px; margin: auto; }
         .form-group { margin-bottom: 1.5rem; }
-        .form-group label { display: block; margin-bottom: .5rem; font-weight: bold; }
-        .form-group input, .form-group textarea { width: 100%; padding: .8rem; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box; }
-        .submit-button { display: block; width: 100%; background: #1a73e8; color: #fff; padding: 1rem; border: none; border-radius: 5px; font-size: 1.2rem; cursor: pointer; transition: background-color 0.3s; }
-        .submit-button:hover { background: #155ab6; }
-        footer { background: #333; color: #fff; text-align: center; padding: 2rem 0; margin-top: 4rem; }
+        .form-group label { display: block; margin-bottom: .7rem; font-weight: bold; font-size: 1.1rem; }
+        .form-group input, .form-group textarea { width: 100%; padding: 1rem; border: 1px solid #ccc; border-radius: 5px; box-sizing: border-box; font-size: 1rem; }
+        .form-group textarea { resize: vertical; }
+        .submit-button { display: block; width: 100%; background: #e74c3c; color: #fff; padding: 1.2rem; border: none; border-radius: 5px; font-size: 1.3rem; cursor: pointer; transition: background-color 0.3s; font-weight: bold; }
+        .submit-button:hover { background: #c0392b; }
+        .contact-note { text-align: center; margin-top: 2rem; color: #ecf0f1; }
+        .contact-note p { margin: 0.5rem 0; }
+
+        /* Footer */
+        footer { background: #2c3e50; color: #bdc3c7; text-align: center; padding: 2.5rem 0; }
     </style>
 </head>
 <body>
 
     <header>
         <div class="container">
-            <h1>Google検索復旧のプロフェッショナル</h1>
-            <p>ウェブサイトという重要な投資を、検索結果から消してしまわないために。</p>
+            <h1>Google検索復旧の専門家集団</h1>
+            <p>その絶望的な状況、我々が最後の砦です。</p>
         </div>
     </header>
 
     <main>
         <section class="hero">
-            <h2>Google検索からあなたのサイトが消えた？</h2>
-            <p>ある日突然、ウェブサイトへのアクセスが激減。それはGoogleによるペナルティかもしれません。<br>私たちは、その原因を徹底的に調査し、あなたのビジネスを再び軌道に乗せるお手伝いをします。</p>
-            <a href="#contact" class="cta-button">今すぐ無料相談を申し込む</a>
+            <h2 class="subtitle">Web制作会社やSEO専門家が匙を投げた案件、歓迎。</h2>
+            <h2>Google検索からの完全除外。<br>そのペナルティ、我々が「執念」で解除します。</h2>
+            <p>数ヶ月の改善も、繰り返しの再審査リクエストも、すべて無駄に終わった。もう打つ手がないとお考えの企業様へ。我々は、表面的な対策では到達できない領域まで潜り、Googleのアルゴリズムの深層と対峙します。</p>
+            <a href="#contact" class="cta-button">覚悟を決めて状況を相談する</a>
         </section>
 
-        <section id="about" class="container">
-            <h3>このようなお悩みはありませんか？</h3>
-            <div class="service-grid">
-                <div class="service-item">
-                    <h4>オーガニック検索からの流入が突然ゼロになった</h4>
-                </div>
-                <div class="service-item">
-                    <h4>主要キーワードで検索しても全く表示されない</h4>
-                </div>
-                <div class="service-item">
-                    <h4>Search Consoleに「手動による対策」の警告が来た</h4>
-                </div>
-            </div>
-        </section>
-
-        <section id="services" class="target-section">
+        <section class="for-whom">
             <div class="container">
-                <h3>私たちのサービス</h3>
-                <p style="text-align:center; max-width: 700px; margin: 0 auto 3rem auto;">私たちは、ECサイト、予約サイト、BtoBサービスなど、ウェブサイトが事業の核となる企業様を対象に、専門的な復旧サービスを提供します。</p>
-                <div class="service-grid">
-                    <div class="service-item">
-                        <h4>徹底的な原因分析</h4>
-                        <p>Googleのガイドライン違反、質の低いコンテンツ、不自然な被リンクなど、ペナルティの原因を特定します。</p>
-                    </div>
-                    <div class="service-item">
-                        <h4>具体的な改善計画の策定</h4>
-                        <p>技術的なSEOの問題修正、コンテンツの改善提案、リンクの精査など、復旧に向けた詳細なロードマップを作成します。</p>
-                    </div>
-                    <div class="service-item">
-                        <h4>Googleへの再審査リクエスト代行</h4>
-                        <p>改善実施後、Googleに対して論理的で説得力のある再審査リクエストを作成し、ペナルティ解除を目指します。</p>
-                    </div>
+                <h3>本気で復旧させたい企業様へ</h3>
+                <div class="for-whom-box">
+                    <h4>これは、あなたのためのサービスです</h4>
+                    <ul>
+                        <li>制作会社に「これ以上は無理」と断られた。</li>
+                        <li>高額なSEOコンサルティングでも解決しなかった。</li>
+                        <li>事業の存続に関わるため、コスト度外視で解決したい。</li>
+                        <li>安価なサービスやフリーランスに任せるのは不安だ。</li>
+                        <li>原因不明のエラーと戦い続けるのに疲弊した。</li>
+                    </ul>
+                    <p style="font-weight: bold; margin-top: 2rem;">中途半端な気持ちの方は、ご遠慮ください。我々は本気です。</p>
                 </div>
             </div>
         </section>
 
-        <section id="contact" class="container">
-            <h3>お問い合わせ・無料相談</h3>
-            <div class="contact-form">
-                <p style="text-align:center; margin-bottom: 2rem;">Google検索での問題を解決し、機会損失を最小限に抑えるため、まずはお気軽にご状況をお聞かせください。</p>
-                <form action="#" method="POST">
-                    <div class="form-group">
-                        <label for="name">お名前</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="company">会社名</label>
-                        <input type="text" id="company" name="company" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">メールアドレス</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="website">対象のウェブサイトURL</label>
-                        <input type="url" id="website" name="website" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">ご相談内容</label>
-                        <textarea id="message" name="message" rows="6" required></textarea>
-                    </div>
-                    <button type="submit" class="submit-button">無料で相談する</button>
-                </form>
+        <section id="philosophy" class="container">
+            <h3>我々の流儀</h3>
+            <div class="philosophy-grid">
+                <div class="philosophy-item">
+                    <h4>徹底的なオタク的探究心</h4>
+                    <p>我々は自らを「Googleアルゴリズム探偵」と称しています。公開情報、特許、論文、そして無数の事例からGoogleの思考を読み解き、仮説と検証を繰り返す。その執念が、他社には見つけられない原因を暴き出します。</p>
+                </div>
+                <div class="philosophy-item">
+                    <h4>表面的な作業はしない</h4>
+                    <p>コンテンツ修正やリンク否認は、あくまで最終工程の一部。問題の本質は、サイト構造、技術的負債、そしてGoogleの理念との乖離にある場合がほとんどです。我々は根本原因にしか興味がありません。</p>
+                </div>
+                <div class="philosophy-item">
+                    <h4>最後までやり遂げる覚悟</h4>
+                    <p>一度お受けした依頼は、復旧するまで絶対に諦めません。それは我々のプライドです。再審査に落ちるたびに、より深く、より多角的に分析し、必ず突破口を見つけ出します。そのための投資は惜しみません。</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h3>お問い合わせ・状況分析依頼</h3>
+                <div class="contact-form">
+                    <form action="#" method="POST">
+                        <div class="form-group">
+                            <label for="company">会社名</label>
+                            <input type="text" id="company" name="company" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="name">ご担当者様氏名</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">メールアドレス</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="website">問題のウェブサイトURL</label>
+                            <input type="url" id="website" name="website" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">これまでの経緯・ご相談内容（具体的に）</label>
+                            <textarea id="message" name="message" rows="8" placeholder="例：〇年〇月頃からアクセスが急減。〇〇社に依頼し、コンテンツ修正と再審査リクエストを3度行ったが改善せず。Search Consoleの手動対策には「〇〇」と表示されています。" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-button">上記を理解の上、分析を依頼する</button>
+                    </form>
+                </div>
+                <div class="contact-note">
+                    <p>※これは単なる問い合わせではありません。我々が貴社の状況を分析するための「依頼」です。</p>
+                    <p>本気の覚悟を持ったご担当者様からのご連絡を、心よりお待ちしております。</p>
+                </div>
             </div>
         </section>
     </main>
