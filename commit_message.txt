@@ -1,1 +1,1 @@
-Refactor: Reorganize file structure to traditional layout
+Add privacy policy and company links to footer
